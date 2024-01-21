@@ -19,7 +19,14 @@ public class fibseq {
         scanner.close();
     }
 
-
+	/**
+	 * This function calculates numbers in the Fibonacci sequence.
+	 * Outputs next number in the sequence up to the total number chosen by the user.
+	 * @param firstNbr First number for addition to calculate new Fibonnaci Number.
+	 * @param secondNbr Second number for addition to calculate new Fibonnaci Number.
+	 * @param countNbr Counts the number of iterations it's cycling through.
+	 * @param chosenNbr The number provided by the user for desired number of output.
+	 */
 	private static void fibCalc(int firstNbr, int secondNbr, int countNbr, int chosenNbr) {
 		if (countNbr < chosenNbr) {
 			int newNbr = firstNbr + secondNbr;
