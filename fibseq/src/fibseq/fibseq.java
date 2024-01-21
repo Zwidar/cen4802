@@ -1,11 +1,18 @@
 package fibseq;
 import java.util.Scanner;
 
+/**
+ * Class designed to generate total number of Fibonacci sequence numbers based on user input.
+ */
 public class fibseq {
 	static int chosenNbr = 0;
 	static int firstNbr = 0;
 	static int secondNbr = 1;
-	
+
+	/**
+	 * This starts the app and gets the user desired number of output.
+	 * @param args default unused.
+	 */
     public static void main(String args[]) {
 
     	System.out.println("How many Fibonacci Numbers?");
