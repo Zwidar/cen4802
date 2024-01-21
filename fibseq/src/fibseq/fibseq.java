@@ -14,18 +14,19 @@ public class fibseq {
     	
     	
 	    System.out.print("Fib Numbers: 0 1 ");
-	    for(int i = 2; i < chosenNbr; i++){
-			System.out.print(fibCalc(i) +" ");
-    }
-	    scanner.close();
+	    fibCalc(firstNbr, secondNbr, 2, chosenNbr);
+		System.out.println();
+        scanner.close();
     }
 
 
-	private static int fibCalc(int i) {
-		 int newNbr = firstNbr + secondNbr;
-         firstNbr = secondNbr;
-         secondNbr = newNbr;
-		return newNbr;
+	private static void fibCalc(int firstNbr, int secondNbr, int countNbr, int chosenNbr) {
+		if (countNbr < chosenNbr) {
+			int newNbr = firstNbr + secondNbr;
+         	countNbr = countNbr + 1;
+			System.out.print(newNbr + " ");
+			fibCalc(secondNbr, newNbr, countNbr, chosenNbr);
+		}
 	} 
 }
 
