@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7a9bec6-12cc-4bfe-8af5-a6f5fd6f35a8" name="Changes" comment="Added javadoc" />
+    <list default="true" id="c7a9bec6-12cc-4bfe-8af5-a6f5fd6f35a8" name="Changes" comment="Added javadoc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,13 +39,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Me/Documents/GitHub/cen4802"
+    "last_opened_file_path": "C:/Users/Me/Documents/GitHub/cen4802/fibseq/src/fibseq"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="FibSeq" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="fibseq.fibseq" />
-      <module name="cen4802" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fibseq/" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
