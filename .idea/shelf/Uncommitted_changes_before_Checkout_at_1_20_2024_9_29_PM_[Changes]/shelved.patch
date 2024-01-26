@@ -1,0 +1,26 @@
+Index: fibseq/src/fibseq/fibseq.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package fibseq;\r\nimport java.util.Scanner;\r\n\r\npublic class fibseq {\r\n\tstatic int chosenNbr = 0;\r\n\tstatic int firstNbr = 0;\r\n\tstatic int secondNbr = 1;\r\n\t\r\n    public static void main(String args[]) {\r\n\r\n    \tSystem.out.println(\"How many Fibonacci Numbers?\");\r\n        Scanner scanner = new Scanner(System.in);\r\n        chosenNbr = scanner.nextInt();\r\n    \t\r\n    \t\r\n\t    System.out.print(\"Fib Numbers: 0 1 \");\r\n\t    fibCalc(firstNbr, secondNbr, 2, chosenNbr);\r\n\t\tSystem.out.println();\r\n        scanner.close();\r\n    }\r\n\r\n\r\n\tprivate static void fibCalc(int firstNbr, int secondNbr, int countNbr, int chosenNbr) {\r\n\t\tif (countNbr < chosenNbr) {\r\n\t\t\tint newNbr = firstNbr + secondNbr;\r\n         \tcountNbr = countNbr + 1;\r\n\t\t\tSystem.out.print(newNbr + \" \");\r\n\t\t\tfibCalc(secondNbr, newNbr, countNbr, chosenNbr);\r\n\t\t}\r\n\t} \r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/fibseq/src/fibseq/fibseq.java b/fibseq/src/fibseq/fibseq.java
+--- a/fibseq/src/fibseq/fibseq.java	(revision 97aa593a13528a1eae0106ac71ed1ed9c63ad833)
++++ b/fibseq/src/fibseq/fibseq.java	(date 1705804109340)
+@@ -19,7 +19,14 @@
+         scanner.close();
+     }
+ 
+-
++	/**
++	 * This function calculates numbers in the Fibonacci sequence.
++	 * Outputs next number in the sequence up to the total number chosen by the user.
++	 * @param firstNbr First number for addition to calculate new Fibonnaci Number.
++	 * @param secondNbr Second number for addition to calculate new Fibonnaci Number.
++	 * @param countNbr Counts the number of iterations it's cycling through.
++	 * @param chosenNbr The number provided by the user for desired number of output.
++	 */
+ 	private static void fibCalc(int firstNbr, int secondNbr, int countNbr, int chosenNbr) {
+ 		if (countNbr < chosenNbr) {
+ 			int newNbr = firstNbr + secondNbr;
